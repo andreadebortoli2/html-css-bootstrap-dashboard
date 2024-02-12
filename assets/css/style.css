@@ -6,42 +6,80 @@
     --bootdash-search-bg: rgba(229, 229, 229, 1);
     --bootdash-bell: rgba(255, 143, 0, 1);
     --bootdash-banner-bg: rgba(27, 114, 232, 1);
+    --bootdash-sidebar-bg: rgba(5, 30, 52, 1);
     --bootdash-lighter: rgba(248, 249, 250, 1);
 }
 
 
 
-/* #reagion header */
-.navbar_brand_mobile {
-    & img {
-        height: 40px;
-    }
+/* #region header */
 
-    @media screen and (min-width:768px) {
+    .navbar_brand_mobile {
+        & img {
+            height: 40px;
+        }
+        
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+    
+    .navbar_brand_desktop {
         display: none;
+        
+        @media screen and (min-width:768px) {
+            display: inline-block;
+        }
     }
-}
-
-.navbar_brand_desktop {
-    display: none;
-
-    @media screen and (min-width:768px) {
-        display: inline-block;
-    }
-}
-
+    /* /navbar-brand */
+    
 nav {
     & [type="search"] {
         background-color: var(--bootdash-search-bg);
     }
 }
 
-
-/* #endreagion header */
-
-.sidebar {
-    height: 100%;
+.bell {
+    & i {
+        color: var(--bootdash-bell);
+    }
 }
+
+/* #endregion header */
+
+
+/* #region main */
+
+/* #region sidebar */
+.sidebar {
+    min-width: 50px;
+    background-color: var(--bootdash-sidebar-bg);
+    background-image: url(../img/sidebar-bg.png);
+
+    & a {
+        color: var(--bootdash-lighter);
+
+        & i {
+            width: 30px;
+        }
+
+        & span {
+            display: none;
+
+            @media screen and (min-width:768px) {
+            display: inline-block;
+            }
+        }
+    }
+}
+/* #endregion sidebar */
+
+
+/* #endregion main */
+
+
+
+
 
 .row {
     background-color: blueviolet;
@@ -53,12 +91,10 @@ nav {
 }
 
 .main_content {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
 }
 
-.col-2 {
-    background-color: palegreen;
-}
+
 
 .col-8 {
     background-color: palevioletred;
