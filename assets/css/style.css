@@ -60,6 +60,10 @@ nav {
     background-color: var(--bootdash-sidebar-bg);
     background-image: url(../img/sidebar-bg.png);
 
+    @media screen and (min-width:768px) {
+        min-width: 130px;
+        }
+
     & a {
         color: var(--bootdash-lighter);
 
@@ -100,8 +104,17 @@ nav {
     }
 
     .app_badges {
-        
+        .app_menu {
+            display: none;
+        }
 
+        .app_number {
+            min-width: 70px;
+        }
+
+        .app_menu {
+            display: none;
+        }
 
         @media screen and (min-width:768px) {
             button {
@@ -109,7 +122,7 @@ nav {
             }
 
             .app_menu {
-                display: inline-block;
+                display: block;
             }
             }
     }
