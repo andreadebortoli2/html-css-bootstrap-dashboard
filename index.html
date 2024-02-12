@@ -8,11 +8,64 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
-        <nav></nav>
+        <nav class="navbar navbar-expand-md py-2">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand navbar_brand_mobile" href="#"><img src="./assets/img/mobile-logo.png" alt=""></a>
+                <a class="navbar-brand navbar_brand_desktop me-2" href="#"><img src="./assets/img/logo.svg" alt=""></a>
+
+                <form class="d-flex flex-grow-1" role="search">
+                    <input class="form-control me-2" type="search"
+                        placeholder="&#xf002; Prova a cercare: lezioni di Lavarel" aria-label="Search">
+                </form>
+
+
+                <div class="collapse navbar-collapse flex-grow-0">
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">
+                                <i class="fa-solid fa-list"></i>
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <button class="btn dropdown">
+                    <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell" style="color: #FFD43B;"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="#">Profilo</a></li>
+                        <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </button>
+
+            </div>
+            </div>
+        </nav>
+
     </header>
     <main>
         <div class="container-fluid">
@@ -36,10 +89,28 @@
                     <div class="row">
                         <div class="col-8">
                             <div class="card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eveniet voluptas. Reiciendis placeat accusantium quam aspernatur! Iusto sapiente qui quidem quo asperiores porro. Totam, facilis perferendis expedita quos consequuntur optio iure recusandae dolorem assumenda excepturi dicta distinctio eos eaque vero architecto neque! Ipsum recusandae dicta id asperiores illo natus cum, laudantium alias libero tempore eos sed quidem quaerat vitae cupiditate tempora amet magnam enim quam ducimus molestias facere? Velit iste, laborum iure delectus nulla id. Corrupti expedita fugiat reprehenderit doloribus nemo ipsa totam ad molestias placeat enim qui quisquam possimus velit sunt impedit, veniam distinctio quia doloremque eum ipsam neque eius? Saepe, iusto eaque quae soluta omnis nihil debitis odio architecto commodi necessitatibus repellat sunt ratione, corporis iure molestiae. Assumenda earum commodi, ratione vitae accusantium dicta delectus nobis nesciunt, molestias, explicabo iure quas porro veniam doloremque. Eos assumenda ut omnis natus minus molestiae eius magnam voluptatem inventore in itaque tempore suscipit quia nam, explicabo commodi numquam temporibus voluptates exercitationem, est autem aperiam dolorem. Est eaque ad, perferendis expedita nisi consequuntur voluptatibus asperiores, similique nemo quod maxime soluta eligendi aliquid porro voluptatum alias! Neque unde deleniti aliquam explicabo natus. Voluptate modi eum fugit id reiciendis nemo ab odit itaque voluptatibus architecto?
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eveniet voluptas.
+                                Reiciendis placeat accusantium quam aspernatur! Iusto sapiente qui quidem quo asperiores
+                                porro. Totam, facilis perferendis expedita quos consequuntur optio iure recusandae
+                                dolorem assumenda excepturi dicta distinctio eos eaque vero architecto neque! Ipsum
+                                recusandae dicta id asperiores illo natus cum, laudantium alias libero tempore eos sed
+                                quidem quaerat vitae cupiditate tempora amet magnam enim quam ducimus molestias facere?
+                                Velit iste, laborum iure delectus nulla id. Corrupti expedita fugiat reprehenderit
+                                doloribus nemo ipsa totam ad molestias placeat enim qui quisquam possimus velit sunt
+                                impedit, veniam distinctio quia doloremque eum ipsam neque eius? Saepe, iusto eaque quae
+                                soluta omnis nihil debitis odio architecto commodi necessitatibus repellat sunt ratione,
+                                corporis iure molestiae. Assumenda earum commodi, ratione vitae accusantium dicta
+                                delectus nobis nesciunt, molestias, explicabo iure quas porro veniam doloremque. Eos
+                                assumenda ut omnis natus minus molestiae eius magnam voluptatem inventore in itaque
+                                tempore suscipit quia nam, explicabo commodi numquam temporibus voluptates
+                                exercitationem, est autem aperiam dolorem. Est eaque ad, perferendis expedita nisi
+                                consequuntur voluptatibus asperiores, similique nemo quod maxime soluta eligendi aliquid
+                                porro voluptatum alias! Neque unde deleniti aliquam explicabo natus. Voluptate modi eum
+                                fugit id reiciendis nemo ab odit itaque voluptatibus architecto?
                             </div>
                             <div class="card">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam. Alias quaerat fuga
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam. Alias quaerat
+                                fuga
                                 nobis in
                                 nam cum odio veritatis mollitia dolorem, dolor ducimus dolore enim aspernatur placeat
                                 deserunt illo
