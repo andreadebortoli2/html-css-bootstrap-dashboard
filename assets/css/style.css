@@ -1,5 +1,5 @@
 * {
-    /* border: 1px dashed deepskyblue; */
+    border: 1px dashed deepskyblue;
 }
 
 :root {
@@ -12,7 +12,9 @@
     --bootdash-lighter: rgba(248, 249, 250, 1);
 }
 
-
+body {
+    font-family: "Roboto", sans-serif;
+}
 
 /* #region header */
 
@@ -40,6 +42,7 @@
 nav {
     & [type="search"] {
         background-color: var(--bootdash-search-bg);
+        font-family: "Roboto", FontAwesome, sans-serif;
     }
 }
 
@@ -127,21 +130,19 @@ nav {
             }
     }
 }
-
-
-
-
 /* #endregion banner */
 
-/* #endregion main */
-
-
+/* #region main_content */
 .main_content {
     height: calc(100vh - 58px);
 }
 
 
 
-.col-8 {
-    background-color: palevioletred;
-}
+
+
+
+
+/* #endregion main_content */
+
+/* #endregion main */

@@ -8,9 +8,12 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/bd1c1c4b68.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -56,7 +59,7 @@
                 </div>
                 <!-- /.desktop navbar expand -->
 
-                <button class="btn dropdown bell">
+                <div class="btn dropdown bell">
                     <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
                     </a>
@@ -65,11 +68,11 @@
                         <li><a class="dropdown-item" href="#">Fatturazione</a></li>
                         <li><a class="dropdown-item" href="#">Logout</a></li>
                     </ul>
-                </button>
+                </div>
                 <!-- /.dropdown bell -->
 
             </div>
-            </div>
+            <!-- /.container -->
         </nav>
         <!-- /.navbar -->
     </header>
@@ -154,14 +157,15 @@
                                                 <input type="text" class="form-control" id="last_name">
                                             </div>
                                         </div>
+                                        <!-- /.name last_name -->
 
                                         <div class="row row-cols-2">
 
                                             <div class="col mb-3">
                                                 <label for="email">Email</label>
                                                 <div class="input-group">
-                                                    <span class="input-group-text" id="email">@</span>
-                                                    <input type="text" class="form-control">
+                                                    <span class="input-group-text">@</span>
+                                                    <input type="text" class="form-control" id="email">
                                                 </div>
                                             </div>
 
@@ -170,22 +174,7 @@
                                                 <input type="text" class="form-control" id="password">
                                             </div>
                                         </div>
-
-                                        <div class="row row-cols-2">
-
-                                            <div class="col mb-3">
-                                                <label for="email">Indirizzo <br> Email</label>
-                                                <div class="input-group">
-                                                    <span class="input-group-text" id="email">@</span>
-                                                    <input type="text" class="form-control">
-                                                </div>
-                                            </div>
-
-                                            <div class="col mb-3">
-                                                <label for="password">Password</label>
-                                                <input type="text" class="form-control" id="password">
-                                            </div>
-                                        </div>
+                                        <!-- /.email password -->
 
                                         <div class="row">
 
@@ -194,6 +183,7 @@
                                                 <input type="text" class="form-control" id="adress">
                                             </div>
                                         </div>
+                                        <!-- /.adress -->
 
                                         <div class="row">
 
@@ -217,11 +207,13 @@
                                                 <input type="text" class="form-control" id="post_code">
                                             </div>
                                         </div>
+                                        <!-- /.city nation post_code -->
 
                                         <div class="col mb-3">
                                             <label for="add_pic" class="form-label">Foto</label>
                                             <input class="form-control" type="file" id="add_pic">
                                         </div>
+                                        <!-- /.add pic -->
 
                                         <div class="col mb-3">
                                             <div class="form-check">
@@ -232,10 +224,12 @@
                                                 </label>
                                             </div>
                                         </div>
+                                        <!-- /.required check -->
 
                                         <button type="submit" class="btn btn-primary">Salva</button>
 
                                         <button type="reset" class="btn btn-warning">Svuota</button>
+                                        <!-- /.buttons -->
                                     </form>
                                 </div>
                             </div>
@@ -253,7 +247,7 @@
                                     <i class="fa-solid fa-angles-right"></i>
                                 </div>
 
-                                <button type="button" class="badge rounded-pill border-0 p-2">
+                                <button type="button" class="badge rounded-pill border-0 ms-2 p-2">
                                     <i class="fa fa-plus" aria-hidden="true"></i>
                                 </button>
 
@@ -275,8 +269,10 @@
                     <!-- /.banner -->
 
                     <div class="row">
-                        <div class="col-8">
-                            <div class="card">
+
+                        <div class="col-12 col-md-8">
+
+                            <div class="card next_classes">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, eveniet voluptas.
                                 Reiciendis placeat accusantium quam aspernatur! Iusto sapiente qui quidem quo asperiores
                                 porro. Totam, facilis perferendis expedita quos consequuntur optio iure recusandae
@@ -296,7 +292,9 @@
                                 porro voluptatum alias! Neque unde deleniti aliquam explicabo natus. Voluptate modi eum
                                 fugit id reiciendis nemo ab odit itaque voluptatibus architecto?
                             </div>
-                            <div class="card">
+                            <!-- /.next_classe -->
+
+                            <div class="card faq">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, numquam. Alias quaerat
                                 fuga
                                 nobis in
@@ -304,18 +302,41 @@
                                 deserunt illo
                                 recusandae.
                             </div>
+                            <!-- /.faq -->
                         </div>
-                        <div class="col-4">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus nostrum quis
-                            consectetur, omnis provident ad, quos eaque reiciendis ipsam unde eligendi vel. Veritatis
-                            beatae,
-                            sed placeat culpa est dolor!
+                        <!-- /.col -->
+
+                        <div class="col-12 col-md-4">
+
+                            <div class="card to_do">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus nostrum
+                                quis
+                                consectetur, omnis provident ad, quos eaque reiciendis ipsam unde eligendi vel.
+                                Veritatis
+                                beatae,
+                                sed placeat culpa est dolor!
+                            </div>
+                            <!-- /.to_do -->
+
+                            <div class="card active_users">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque repellendus nostrum
+                                quis
+                                consectetur, omnis provident ad, quos eaque reiciendis ipsam unde eligendi vel.
+                                Veritatis
+                                beatae,
+                                sed placeat culpa est dolor!
+                            </div>
+                            <!-- /.active_users -->
                         </div>
+                        <!-- /.col -->
                     </div>
+                    <!-- /.row -->
                 </div>
+                <!-- /.main_content -->
             </div>
+            <!-- /.row -->
         </div>
-        </div>
+        <!-- /.container -->
     </main>
     <!-- /.main -->
 
