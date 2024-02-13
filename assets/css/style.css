@@ -17,7 +17,6 @@ body {
 }
 
 /* #region header */
-
 .navbar_brand_mobile {
     & img {
         height: 43px;
@@ -52,7 +51,6 @@ nav {
         color: var(--bootdash-bell);
     }
 }
-
 /* #endregion header */
 
 
@@ -89,12 +87,12 @@ nav {
         background-color: var(--bootdash-sidebar-hover-bg);
     }
 }
-
 /* #endregion sidebar */
 
 /* #region banner */
 .banner {
     background-color: var(--bootdash-banner-bg);
+    overflow: auto;
 
     .badge {
         background-color: var(--bootdash-banner-badge-bg);
@@ -132,7 +130,6 @@ nav {
         }
     }
 }
-
 /* #endregion banner */
 
 /* #region main_content */
@@ -151,13 +148,27 @@ nav {
         padding: 0.5rem;
         margin-left: 0.5rem;
     }
+
+    .table {
+
+        & th:nth-child(2),
+        & th:nth-child(3),
+        & td:nth-child(2),
+        & td:nth-child(3) {
+            display: none;
+        }
+
+        @media screen and (min-width:576px) {
+
+            & th:nth-child(2),
+            & th:nth-child(3),
+            & td:nth-child(2),
+            & td:nth-child(3) {
+                display: table-cell;
+            }
+        }
+    }
 }
-
-
-
-
-
-
 /* #endregion main_content */
 
 /* #endregion main */
