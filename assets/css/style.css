@@ -156,13 +156,6 @@ main {
         width: 30px;
     }
 
-    & i {
-        border: 1px solid;
-        border-radius: 0.5rem;
-        padding: 0.5rem;
-        margin-left: 0.5rem;
-    }
-
     .table {
 
         & th:nth-child(2),
